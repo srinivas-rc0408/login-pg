@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Login - Your App</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="background">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+        <div class="stars"></div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Left Section - Branding -->
+        <div class="left-section">
+            <div class="brand">
+                <div class="logo-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h2>YourApp</h2>
+                <p>Premium Experience Awaits</p>
+            </div>
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-lock"></i>
+                    <span>Secure & Encrypted</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-bolt"></i>
+                    <span>Lightning Fast</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-users"></i>
+                    <span>Community Driven</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Section - Login Form -->
+        <div class="right-section">
+            <div class="login-box">
+                <h1>Welcome Back</h1>
+                <p class="subtitle">Sign in to your account</p>
+
+                <form id="login-form">
+                    <div class="form-group">
+                        <div class="input-wrapper">
+                            <i class="fas fa-user"></i>
+                            <input 
+                                type="text" 
+                                id="username" 
+                                name="username" 
+                                placeholder="Username or Email"
+                                required
+                            >
+                        </div>
+                        <span class="input-border"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-wrapper">
+                            <i class="fas fa-lock"></i>
+                            <input 
+                                type="password" 
+                                id="password" 
+                                name="password" 
+                                placeholder="Password"
+                                required
+                            >
+                            <i class="fas fa-eye toggle-password" id="togglePassword"></i>
+                        </div>
+                        <span class="input-border"></span>
+                    </div>
+
+                    <div class="remember-forgot">
+                        <label class="checkbox">
+                            <input type="checkbox" name="remember">
+                            <span>Remember me</span>
+                        </label>
+                        <a href="#" class="forgot-link">Forgot password?</a>
+                    </div>
+
+                    <button type="submit" class="login-btn">
+                        <span>Sign In</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+
+                    <p class="error-message" id="error-message"></p>
+                </form>
+
+                <div class="divider">
+                    <span>Or continue with</span>
+                </div>
+
+                <div class="social-login">
+                    <button class="social-btn google" title="Google">
+                        <i class="fab fa-google"></i>
+                    </button>
+                    <button class="social-btn github" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </button>
+                    <button class="social-btn twitter" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </button>
+                </div>
+
+                <p class="signup-link">
+                    Don't have an account? <a href="#">Create one</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/login.js"></script>
+</body>
+</html>
